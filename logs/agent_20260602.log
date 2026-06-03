@@ -1,0 +1,76 @@
+2026-06-02 10:40:45,681 - agent - ERROR - prompt_loader.py:25 - [load_rag_prompt]解析提示词出错
+2026-06-02 12:09:44,375 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-06-02 12:09:44,376 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 我所在城市天气下如何保养扫地机器人？
+2026-06-02 12:09:46,911 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：get_user_location
+2026-06-02 12:09:46,911 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{}
+2026-06-02 12:09:46,912 - agent - INFO - middleware.py:24 - [tool monitor]工具get_user_location调用成功
+2026-06-02 12:09:46,913 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有3条消息。
+2026-06-02 12:09:46,913 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 上海市
+2026-06-02 12:09:49,165 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：get_weather
+2026-06-02 12:09:49,166 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'city': '上海市'}
+2026-06-02 12:09:49,166 - agent - INFO - middleware.py:24 - [tool monitor]工具get_weather调用成功
+2026-06-02 12:09:49,168 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有5条消息。
+2026-06-02 12:09:49,168 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 今天天气30度，晴天，西南风3级
+2026-06-02 12:09:51,524 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：rag_summarize
+2026-06-02 12:09:51,525 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': '高温晴天环境下扫地机器人保养方法'}
+2026-06-02 12:09:54,742 - agent - INFO - middleware.py:24 - [tool monitor]工具rag_summarize调用成功
+2026-06-02 12:09:54,743 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有7条消息。
+2026-06-02 12:09:54,744 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 高温晴天环境下，扫地机器人使用后应及时用干软布擦拭机身外壳，清除灰尘和水渍；清理防撞条缝隙中的毛发和线头；检查边刷是否卡顿并及时清理；清扫完成后将模式调至“待机”以减少电量消耗；若在水泥地或老旧地砖环境使用，需立即清理机身底部和轮组的泥沙。
+2026-06-02 12:11:33,068 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-06-02 12:11:33,068 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 给我生成我的使用报告
+2026-06-02 12:11:34,981 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：get_user_id
+2026-06-02 12:11:34,981 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{}
+2026-06-02 12:11:34,982 - agent - INFO - middleware.py:24 - [tool monitor]工具get_user_id调用成功
+2026-06-02 12:11:34,983 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有3条消息。
+2026-06-02 12:11:34,983 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | Error: get_user_id is not a valid tool, try one of [get_weather, get_user_location, rag_summarize, fetch_external_data].
+2026-06-02 12:11:38,005 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：fill_context_for_report
+2026-06-02 12:11:38,005 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{}
+2026-06-02 12:11:38,005 - agent - INFO - middleware.py:24 - [tool monitor]工具fill_context_for_report调用成功
+2026-06-02 12:11:38,006 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有5条消息。
+2026-06-02 12:11:38,006 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | Error: fill_context_for_report is not a valid tool, try one of [get_weather, get_user_location, rag_summarize, fetch_external_data].
+2026-06-02 12:12:24,120 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-06-02 12:12:24,120 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 给我生成我的使用报告，我的ID为1001
+2026-06-02 12:12:25,710 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：get_current_month
+2026-06-02 12:12:25,710 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{}
+2026-06-02 12:12:25,711 - agent - INFO - middleware.py:24 - [tool monitor]工具get_current_month调用成功
+2026-06-02 12:12:25,712 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有3条消息。
+2026-06-02 12:12:25,712 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | Error: get_current_month is not a valid tool, try one of [get_weather, get_user_location, rag_summarize, fetch_external_data].
+2026-06-02 12:12:27,659 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：fill_context_for_report
+2026-06-02 12:12:27,659 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{}
+2026-06-02 12:12:27,659 - agent - INFO - middleware.py:24 - [tool monitor]工具fill_context_for_report调用成功
+2026-06-02 12:12:27,660 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有5条消息。
+2026-06-02 12:12:27,661 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | Error: fill_context_for_report is not a valid tool, try one of [get_weather, get_user_location, rag_summarize, fetch_external_data].
+2026-06-02 12:12:30,446 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：fetch_external_data
+2026-06-02 12:12:30,446 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'user_id': '1001', 'month': '2025-06'}
+2026-06-02 12:12:30,448 - agent - INFO - middleware.py:24 - [tool monitor]工具fetch_external_data调用成功
+2026-06-02 12:12:30,449 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有7条消息。
+2026-06-02 12:12:30,449 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | {"特征": "65㎡公寓 | 单身 | 木地板", "效率": "覆盖率:85%\\n日均清扫:45㎡\\n漏扫区域:沙发底部（高度不足）", "耗材": "主刷寿命:剩余60天\\nHEPA滤网:剩余40%", "对比": "优于65%同面积用户（清洁频率更高）"}
+2026-06-02 18:23:36,554 - agent - WARNING - agent_tools.py:156 - [get_user_location] 空城市信息 info=OK infocode=10000 ip=18.143.192.172 raw={'status': '1', 'info': 'OK', 'infocode': '10000', 'province': [], 'city': [], 'adcode': [], 'rectangle': []}
+2026-06-02 18:34:20,674 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-06-02 18:34:20,675 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 你是谁
+2026-06-02 18:34:50,820 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-06-02 18:34:50,821 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 在我所在城市该如何保养扫地机器人？有什么注意事项
+2026-06-02 18:34:54,316 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：get_user_location
+2026-06-02 18:34:54,317 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{}
+2026-06-02 18:34:55,067 - agent - INFO - middleware.py:24 - [tool monitor]工具get_user_location调用成功
+2026-06-02 18:34:55,130 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有3条消息。
+2026-06-02 18:34:55,131 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 长沙市
+2026-06-02 18:34:59,404 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：get_weather
+2026-06-02 18:34:59,405 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'city': '长沙市'}
+2026-06-02 18:34:59,768 - agent - INFO - middleware.py:24 - [tool monitor]工具get_weather调用成功
+2026-06-02 18:35:00,859 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有5条消息。
+2026-06-02 18:35:00,860 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 城市 长沙市 天气为 多云，气温 30 摄氏度，空气湿度 66%，北风 ≤3 级，数据发布时间 2026-06-02 18:34:41。
+2026-06-02 18:35:04,170 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：rag_summarize
+2026-06-02 18:35:04,171 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': '高湿度环境下扫地机器人保养注意事项'}
+2026-06-02 18:35:06,683 - agent - INFO - middleware.py:24 - [tool monitor]工具rag_summarize调用成功
+2026-06-02 18:35:07,994 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有7条消息。
+2026-06-02 18:35:07,995 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 高湿度环境下，扫地机器人应避免拖地以防接触积水；每次使用后需及时清理机身底部并擦拭干水渍，防止水分残留；同时注意清洁防撞条缝隙中的杂物，保持机身干燥，以减少故障风险。
+2026-06-02 18:35:45,787 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-06-02 18:35:45,788 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 你是否还记得我们聊过什么内容？
+2026-06-02 18:37:02,103 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-06-02 18:37:02,104 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 我的房间是小户型有什么推荐的扫地机器人型号吗？
+2026-06-02 18:37:03,590 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：rag_summarize
+2026-06-02 18:37:03,590 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': '小户型适用的扫地机器人型号推荐'}
+2026-06-02 18:37:06,282 - agent - INFO - middleware.py:24 - [tool monitor]工具rag_summarize调用成功
+2026-06-02 18:37:07,920 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有3条消息。
+2026-06-02 18:37:07,921 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 小户型适用的扫地机器人推荐基础激光导航机型，如米家 1C、石头 T4；建议选择吸力≥3000Pa、机身高度≤7.5cm、具备HEPA H13级及以上过滤系统的型号，以兼顾灵活性、清洁效果和对低矮空间的适应性。
