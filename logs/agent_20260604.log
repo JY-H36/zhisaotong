@@ -1,0 +1,43 @@
+2026-06-04 13:26:32,886 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有2条消息。
+2026-06-04 13:26:32,887 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 帮我查看我的使用报告
+2026-06-04 13:26:34,685 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：fill_context_for_report
+2026-06-04 13:26:34,685 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{}
+2026-06-04 13:26:34,685 - agent - INFO - middleware.py:24 - [tool monitor]工具fill_context_for_report调用成功
+2026-06-04 13:26:34,686 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有4条消息。
+2026-06-04 13:26:34,686 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | Error: fill_context_for_report is not a valid tool, try one of [get_weather, get_user_location, rag_summarize, fetch_external_data, get_current_month, get_user_id].
+2026-06-04 13:26:36,856 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：get_user_id
+2026-06-04 13:26:36,857 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{}
+2026-06-04 13:26:36,858 - agent - INFO - middleware.py:24 - [tool monitor]工具get_user_id调用成功
+2026-06-04 13:26:36,858 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有6条消息。
+2026-06-04 13:26:36,859 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 1002
+2026-06-04 13:26:38,781 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：get_current_month
+2026-06-04 13:26:38,781 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{}
+2026-06-04 13:26:38,782 - agent - INFO - middleware.py:24 - [tool monitor]工具get_current_month调用成功
+2026-06-04 13:26:38,782 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有8条消息。
+2026-06-04 13:26:38,783 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 2025-05
+2026-06-04 13:26:40,708 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：fetch_external_data
+2026-06-04 13:26:40,708 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'user_id': '1002', 'month': '2025-05'}
+2026-06-04 13:26:40,710 - agent - INFO - middleware.py:24 - [tool monitor]工具fetch_external_data调用成功
+2026-06-04 13:26:40,711 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有10条消息。
+2026-06-04 13:26:40,712 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | {"特征": "70㎡公寓 | 情侣 | 瓷砖", "效率": "覆盖率:90%\\n避障失败:0次/周", "耗材": "边刷寿命:剩余50天\\n尘盒清理:每4天", "对比": "拖地功能使用率优于同类10%"}
+2026-06-04 13:27:47,283 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有4条消息。
+2026-06-04 13:27:47,283 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 我的用户ID是多少
+2026-06-04 13:27:48,343 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：get_user_id
+2026-06-04 13:27:48,344 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{}
+2026-06-04 13:27:48,344 - agent - INFO - middleware.py:24 - [tool monitor]工具get_user_id调用成功
+2026-06-04 13:27:48,346 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有6条消息。
+2026-06-04 13:27:48,346 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 1003
+2026-06-04 13:34:57,092 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有2条消息。
+2026-06-04 13:34:57,093 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 小户型适合哪些扫地机器人？
+2026-06-04 13:34:58,852 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：rag_summarize
+2026-06-04 13:34:58,852 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': '小户型 扫地机器人 选购建议'}
+2026-06-04 13:35:01,571 - agent - INFO - middleware.py:24 - [tool monitor]工具rag_summarize调用成功
+2026-06-04 13:35:01,572 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有4条消息。
+2026-06-04 13:35:01,573 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 小户型选购扫地机器人应优先考虑轻便灵活的机型，基础激光导航即可满足需求，如米家1C、石头T4；建议选择吸力≥3000Pa、支持吸力调节的型号，并关注导航类型、电池容量及尘盒/水箱容量等核心参数。
+2026-06-04 13:38:47,841 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有4条消息。
+2026-06-04 13:38:47,841 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 我的用户ID是多少
+2026-06-04 13:38:49,173 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：get_user_id
+2026-06-04 13:38:49,173 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{}
+2026-06-04 13:38:49,173 - agent - INFO - middleware.py:24 - [tool monitor]工具get_user_id调用成功
+2026-06-04 13:38:49,173 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有6条消息。
+2026-06-04 13:38:49,173 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 1002
